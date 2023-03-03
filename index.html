@@ -207,9 +207,10 @@
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                            <script
-                            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-                        ></script>
+
+                        <script
+                        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+                        </script>
                         
                         <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
                         <link
@@ -224,26 +225,9 @@
                         </div>
                         
                         <script>
-                            GitHubCalendar(".calendar", "krushnabhanage10", { responsive: true });
+                          // or enable responsive functionality:
+                          GitHubCalendar(".calendar", "krushnabhanage10", { responsive: true });
                         </script>
-
-
-                        <link 
-                            rel="stylesheet" 
-                            href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-                        />
-                        <link 
-                            rel="stylesheet" 
-                            href="github-activity.min.css"
-                        />
-
-                        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-                        <script type="text/javascript" src="github-activity.min.js"></script>   
-                        <div id="feed"></div>
-                        <script>
-                            GitHubActivity.feed({ username: "krushnabhanage10", selector: "#feed" });
-                        </script>
-
 
 
                     </div><!--//secton-inner-->
