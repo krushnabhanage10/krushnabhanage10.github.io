@@ -225,9 +225,22 @@
                 <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
               <div id="ghfeed" class="ghfeed"></div>
               <!--//ghfeed-->
-              <!-- replace x.x.x with actual version -->
-              <script src="https://unpkg.com/@codersrank/activity@x.x.x/codersrank-activity.min.js"></script>
-              <codersrank-activity username="krushnabhanage10" labels legend tooltip></codersrank-activity>
+              <head>
+                <link href="../css/github_widget_activity.css" rel="stylesheet">
+            </head>
+            
+            <body>
+                <div id="widget-container" style="width:600px"></div>
+                <script src="../js/jquery-1.7.1.min.js"></script>
+                <script src="../js/github_widget_activity.js"></script>
+                <script>
+                  $(function(){
+                    $('#widget-container').activity({
+                      username: 'krushnabhanage10'
+                    });
+                  });
+                </script>
+            </body>
             </div>
             <!--//secton-inner-->
           </section>
