@@ -225,22 +225,11 @@
                 <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
               <div id="ghfeed" class="ghfeed"></div>
               <!--//ghfeed-->
-              <head>
-                <link href="../css/github_widget_activity.css" rel="stylesheet">
-              </head>
-            
-              <body>
-                  <div id="widget-container" style="width:600px"></div>
-                  <script src="../js/jquery-1.7.1.min.js"></script>
-                  <script src="../js/github_widget_activity.js"></script>
-                  <script>
-                    $(function(){
-                      $('#widget-container').activity({
-                        username: 'krushnabhanage10'
-                      });
-                    });
-                  </script>
-              </body>
+              <script>
+                $('#github-activity').githubActivity({
+                  repos: ["krushnabhanage10/buildimage", "krushnabhanage10/test", "krushnabhanage10/AzureDevOps"]
+                });
+              </script>
             </div>
             <!--//secton-inner-->
           </section>
