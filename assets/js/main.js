@@ -45,4 +45,4 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "krushnabhanage10", selector: "#ghfeed" });
+    GitHubActivity.feed({ username: "krushnabhanage10", selector: "#ghfeed", repo: "krushnabhanage10/test" });
